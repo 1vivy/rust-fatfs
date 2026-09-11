@@ -1,0 +1,1537 @@
+{
+  "schemaVersion": 1,
+  "repository": "rust-fatfs",
+  "baselineCommit": "a8cdf82d9b1a8b4125197c20d320d35df646f64d",
+  "consumedRevision": "a8cdf82d9b1a8b4125197c20d320d35df646f64d",
+  "upstreamComparison": "2aefc2a027ce94ed0671752814dac203f0450e11",
+  "counting": "Each declared test and explicit subcase is listed; Rustdoc snippets and manual qualification cases are identified separately. Target-gated tests remain listed even when they cannot run on this host. Data fixtures/support scripts and historical reports are not test cases.",
+  "entries": [
+    {
+      "source": {
+        "name": "test_estimate_fat_type",
+        "path": "src/boot_sector.rs",
+        "line": 833
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: estimate fat type.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_determine_bytes_per_cluster_fat12",
+        "path": "src/boot_sector.rs",
+        "line": 841
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: determine bytes per cluster fat12.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_determine_bytes_per_cluster_fat16",
+        "path": "src/boot_sector.rs",
+        "line": 849
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: determine bytes per cluster fat16.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_determine_bytes_per_cluster_fat32",
+        "path": "src/boot_sector.rs",
+        "line": 867
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: determine bytes per cluster fat32.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_determine_sectors_per_fat",
+        "path": "src/boot_sector.rs",
+        "line": 964
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: determine sectors per fat.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_format_boot_sector",
+        "path": "src/boot_sector.rs",
+        "line": 983
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: format boot sector.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_determine_fs_layout_fat12",
+        "path": "src/boot_sector.rs",
+        "line": 1024
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: determine fs layout fat12.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_determine_fs_layout_fat16",
+        "path": "src/boot_sector.rs",
+        "line": 1030
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: determine fs layout fat16.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_determine_fs_layout_fat32",
+        "path": "src/boot_sector.rs",
+        "line": 1036
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: determine fs layout fat32.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_rename_dir_updates_dotdot_cluster",
+        "path": "src/dir.rs",
+        "line": 1278
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: rename dir updates dotdot cluster.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "fork-added",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_split_path",
+        "path": "src/dir.rs",
+        "line": 1305
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: split path.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_generate_short_name",
+        "path": "src/dir.rs",
+        "line": 1312
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: generate short name.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-test-extended",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_generate_short_name_multibyte",
+        "path": "src/dir.rs",
+        "line": 1334
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: generate short name multibyte.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "fork-added",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_generate_short_name_leading_dot",
+        "path": "src/dir.rs",
+        "line": 1342
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: generate short name leading dot.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "fork-added",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_short_name_checksum_overflow",
+        "path": "src/dir.rs",
+        "line": 1347
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: short name checksum overflow.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_lfn_checksum_overflow",
+        "path": "src/dir.rs",
+        "line": 1352
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: lfn checksum overflow.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_generate_short_name_collisions_long",
+        "path": "src/dir.rs",
+        "line": 1357
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: generate short name collisions long.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_generate_short_name_collisions_short",
+        "path": "src/dir.rs",
+        "line": 1394
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: generate short name collisions short.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "short_name_with_ext",
+        "path": "src/dir_entry.rs",
+        "line": 736
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: short name with ext.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "short_name_without_ext",
+        "path": "src/dir_entry.rs",
+        "line": 748
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: short name without ext.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "short_name_eq_ignore_case",
+        "path": "src/dir_entry.rs",
+        "line": 755
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: short name eq ignore case.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "short_name_05_changed_to_e5",
+        "path": "src/dir_entry.rs",
+        "line": 763
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: short name 05 changed to e5.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "lowercase_short_name",
+        "path": "src/dir_entry.rs",
+        "line": 772
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: lowercase short name.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "rustdoc example at line 15",
+        "path": "src/lib.rs",
+        "line": 15
+      },
+      "kind": "rustdoc",
+      "decision": "keep",
+      "contract": "Published Rust API usage remains compatible with the documented example.",
+      "owner": "rust-fatfs",
+      "layer": "public API compile/example",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "rust"
+    },
+    {
+      "source": {
+        "name": "test_fat12",
+        "path": "src/table.rs",
+        "line": 730
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: fat12.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_fat16",
+        "path": "src/table.rs",
+        "line": 740
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: fat16.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_fat32",
+        "path": "src/table.rs",
+        "line": 751
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: fat32.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "date_new_no_panic_1980",
+        "path": "src/time.rs",
+        "line": 255
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: date new no panic 1980.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "date_new_panic_year_1979",
+        "path": "src/time.rs",
+        "line": 260
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: date new panic year 1979.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "date_new_no_panic_2107",
+        "path": "src/time.rs",
+        "line": 266
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: date new no panic 2107.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "date_new_panic_year_2108",
+        "path": "src/time.rs",
+        "line": 271
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: date new panic year 2108.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "date_encode_decode",
+        "path": "src/time.rs",
+        "line": 277
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: date encode decode.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "time_encode_decode",
+        "path": "src/time.rs",
+        "line": 285
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: time encode decode.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "date_time_from_chrono_leap_second",
+        "path": "src/time.rs",
+        "line": 301
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: date time from chrono leap second.",
+      "owner": "rust-fatfs",
+      "layer": "library unit",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "flush_keeps_mount_writable_and_dirty_until_unmount",
+        "path": "tests/flush.rs",
+        "line": 33
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: flush keeps mount writable and dirty until unmount.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "fork-added",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_format_1mb",
+        "path": "tests/format.rs",
+        "line": 82
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: format 1mb.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_format_8mb_1fat",
+        "path": "tests/format.rs",
+        "line": 90
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: format 8mb 1fat.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_format_50mb",
+        "path": "tests/format.rs",
+        "line": 98
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: format 50mb.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_format_2gb_512sec",
+        "path": "tests/format.rs",
+        "line": 106
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: format 2gb 512sec.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_format_1gb_4096sec",
+        "path": "tests/format.rs",
+        "line": 114
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: format 1gb 4096sec.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_format_empty_volume_label",
+        "path": "tests/format.rs",
+        "line": 122
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: format empty volume label.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_format_volume_label_and_id",
+        "path": "tests/format.rs",
+        "line": 131
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: format volume label and id.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_zero_root_dir_clusters",
+        "path": "tests/format.rs",
+        "line": 146
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: zero root dir clusters.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_fsck_1mb_fat12",
+        "path": "tests/fsck.rs",
+        "line": 53
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: fsck 1mb fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_fsck_33mb_fat16",
+        "path": "tests/fsck.rs",
+        "line": 60
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: fsck 33mb fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_fsck_33mb_fat32",
+        "path": "tests/fsck.rs",
+        "line": 67
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: fsck 33mb fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_root_dir_fat12",
+        "path": "tests/read.rs",
+        "line": 36
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: root dir fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_root_dir_fat16",
+        "path": "tests/read.rs",
+        "line": 41
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: root dir fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_root_dir_fat32",
+        "path": "tests/read.rs",
+        "line": 46
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: root dir fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_read_seek_short_file_fat12",
+        "path": "tests/read.rs",
+        "line": 68
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: read seek short file fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_read_seek_short_file_fat16",
+        "path": "tests/read.rs",
+        "line": 73
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: read seek short file fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_read_seek_short_file_fat32",
+        "path": "tests/read.rs",
+        "line": 78
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: read seek short file fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_read_long_file_fat12",
+        "path": "tests/read.rs",
+        "line": 97
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: read long file fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_read_long_file_fat16",
+        "path": "tests/read.rs",
+        "line": 102
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: read long file fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_read_long_file_fat32",
+        "path": "tests/read.rs",
+        "line": 107
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: read long file fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_get_dir_by_path_fat12",
+        "path": "tests/read.rs",
+        "line": 133
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: get dir by path fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_get_dir_by_path_fat16",
+        "path": "tests/read.rs",
+        "line": 138
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: get dir by path fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_get_dir_by_path_fat32",
+        "path": "tests/read.rs",
+        "line": 143
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: get dir by path fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_get_file_by_path_fat12",
+        "path": "tests/read.rs",
+        "line": 173
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: get file by path fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_get_file_by_path_fat16",
+        "path": "tests/read.rs",
+        "line": 178
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: get file by path fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_get_file_by_path_fat32",
+        "path": "tests/read.rs",
+        "line": 183
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: get file by path fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_volume_metadata_fat12",
+        "path": "tests/read.rs",
+        "line": 195
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: volume metadata fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_volume_metadata_fat16",
+        "path": "tests/read.rs",
+        "line": 200
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: volume metadata fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_volume_metadata_fat32",
+        "path": "tests/read.rs",
+        "line": 205
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: volume metadata fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_status_flags_fat12",
+        "path": "tests/read.rs",
+        "line": 216
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: status flags fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_status_flags_fat16",
+        "path": "tests/read.rs",
+        "line": 221
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: status flags fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_status_flags_fat32",
+        "path": "tests/read.rs",
+        "line": 226
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: status flags fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_stats_fat12",
+        "path": "tests/read.rs",
+        "line": 231
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: stats fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_stats_fat16",
+        "path": "tests/read.rs",
+        "line": 244
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: stats fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_stats_fat32",
+        "path": "tests/read.rs",
+        "line": 257
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: stats fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_multi_thread",
+        "path": "tests/read.rs",
+        "line": 270
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: multi thread.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_write_file_fat12",
+        "path": "tests/write.rs",
+        "line": 56
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: write file fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_write_file_fat16",
+        "path": "tests/write.rs",
+        "line": 61
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: write file fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_write_file_fat32",
+        "path": "tests/write.rs",
+        "line": 66
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: write file fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_write_long_file_fat12",
+        "path": "tests/write.rs",
+        "line": 89
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: write long file fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_write_long_file_fat16",
+        "path": "tests/write.rs",
+        "line": 94
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: write long file fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_write_long_file_fat32",
+        "path": "tests/write.rs",
+        "line": 99
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: write long file fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_remove_fat12",
+        "path": "tests/write.rs",
+        "line": 122
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: remove fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_remove_fat16",
+        "path": "tests/write.rs",
+        "line": 127
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: remove fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_remove_fat32",
+        "path": "tests/write.rs",
+        "line": 132
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: remove fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_create_file_fat12",
+        "path": "tests/write.rs",
+        "line": 189
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: create file fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_create_file_fat16",
+        "path": "tests/write.rs",
+        "line": 194
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: create file fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_create_file_fat32",
+        "path": "tests/write.rs",
+        "line": 199
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: create file fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_create_dir_fat12",
+        "path": "tests/write.rs",
+        "line": 261
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: create dir fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_create_dir_fat16",
+        "path": "tests/write.rs",
+        "line": 266
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: create dir fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_create_dir_fat32",
+        "path": "tests/write.rs",
+        "line": 271
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: create dir fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_rename_file_fat12",
+        "path": "tests/write.rs",
+        "line": 324
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: rename file fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_rename_file_fat16",
+        "path": "tests/write.rs",
+        "line": 329
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: rename file fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_rename_file_fat32",
+        "path": "tests/write.rs",
+        "line": 334
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: rename file fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_dirty_flag_fat12",
+        "path": "tests/write.rs",
+        "line": 360
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: dirty flag fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_dirty_flag_fat16",
+        "path": "tests/write.rs",
+        "line": 365
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: dirty flag fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_dirty_flag_fat32",
+        "path": "tests/write.rs",
+        "line": 370
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: dirty flag fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_multiple_files_in_directory_fat12",
+        "path": "tests/write.rs",
+        "line": 389
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: multiple files in directory fat12.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_multiple_files_in_directory_fat16",
+        "path": "tests/write.rs",
+        "line": 394
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: multiple files in directory fat16.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    },
+    {
+      "source": {
+        "name": "test_multiple_files_in_directory_fat32",
+        "path": "tests/write.rs",
+        "line": 399
+      },
+      "kind": "test",
+      "decision": "keep",
+      "contract": "FAT byte layout, directory/file operations and flush durability: multiple files in directory fat32.",
+      "owner": "rust-fatfs",
+      "layer": "filesystem integration / disposable images",
+      "replacement": null,
+      "reason": "The implementation-owning repository already owns this contract; retain its coverage without reproducing the driver matrix in CBM.",
+      "origin": "upstream-inherited",
+      "configuration": "as declared by crate target/features"
+    }
+  ],
+  "totals": {
+    "test": 94,
+    "rustdoc": 1
+  },
+  "decisions": {
+    "keep": 95
+  }
+}
