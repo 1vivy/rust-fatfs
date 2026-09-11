@@ -1,6 +1,21 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
+  pull_request:
+    paths-ignore:
+      - '**/*.md'
+      - 'docs/**'
+  workflow_dispatch:
 
 name: CI
+
+permissions:
+  contents: read
+
+env:
+  CARGO_BUILD_JOBS: 2
 
 jobs:
   check:
@@ -32,7 +47,14 @@ jobs:
           rustup default ${{ matrix.rust_version }}
           rustc --version
 
-      - name: Build
+      # FAT fixtures can contain large sparse images. Retain registry/git
+      # downloads, not target directories or temporary filesystem images.
+      - uses: Swatinem/rust-cache@6323deb102c322ba6fcbdcafc7e3dddab59af2b6 # v2
+        with:
+          cache-targets: false
+
+      - name: Build on MSRV
+        if: ${{ !matrix.run_tests }}
         run: cargo build
 
       - name: Run tests
